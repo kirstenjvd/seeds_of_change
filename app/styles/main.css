@@ -493,24 +493,24 @@ img {
 .about img {
   display: inline-block; }
 
-.history .copy-lrg {
+.inner-row.history .typography-container .copy-lrg {
   font-size: 37px;
   font-weight: 700;
   letter-spacing: 0.01em;
   text-transform: uppercase;
   margin: 0 0 8px !important; }
-.history .copy-sm {
+.inner-row.history .copy-sm {
   font-weight: 900;
   font-size: 12px;
   line-height: 16px;
   padding: 0 8px; }
   @media screen and (max-width: 450px) {
-    .history .copy-sm {
+    .inner-row.history .copy-sm {
       font-size: 15px;
       line-height: 18px; } }
-.history .inner-container-heading p {
+.inner-row.history .inner-container-heading p {
   margin: 0; }
-.history .banner-heading {
+.inner-row.history .banner-heading {
   margin-bottom: 10px; }
 
 .philosophy span {
