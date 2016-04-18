@@ -1,0 +1,133 @@
+.inner-row{
+	position: relative;
+	margin-bottom: 24px;
+	padding-bottom: 14px;
+	border-bottom: 1px solid $black;
+	&:last-child{
+		border-bottom: none;
+	}
+}
+.inner-container-heading{
+  max-width: 180px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  text-align: center;
+  color: $color-brand;
+  padding-top: 4px;
+}
+.inner-container-copy{
+  padding-left: 228px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  strong{
+  	font-weight: 900;
+  }
+  @include max-screen($tablet){
+	padding-left: 0;
+  }
+  @include max-screen($phone){
+	font-size: 16px;
+  }
+}
+.about img{
+	display: inline-block;
+}
+.history{
+	.copy-lrg{
+		font-size: 37px;
+		font-weight: 700;
+		letter-spacing: 0.01em;
+		text-transform: uppercase;
+		margin:0 0 8px!important;
+	}
+	.copy-sm{
+		font-weight: 900;
+		font-size: 12px;
+		line-height: 16px;
+		padding: 0 8px;
+		@include max-screen($phone){
+			font-size: 15px;
+    		line-height: 18px;
+    	}
+	}
+	.inner-container-heading p{
+		margin:0;
+	}
+	.banner-heading{
+		margin-bottom: 10px;
+	}
+}
+.philosophy{
+	span{
+		display:block;
+	}
+	.copy-lrg{
+		font-size: 18px;
+		// margin:0 0 8px;
+		text-transform: uppercase;
+	}
+	.copy-med{
+		font-size: 16px;
+		letter-spacing: 0.05em;
+	}
+	.copy-sm{
+		font-size: 16px;
+		line-height: 16px;
+	}
+	.inner-container-heading p{
+		line-height: 18px;
+		font-weight: 900;
+	}
+	.banner-heading{
+		margin-bottom: 10px;
+	}
+}
+.grid{
+	font-size: 0;
+	max-width: 813px;
+	margin: 0 auto;
+	text-align: center;
+	@include max-screen(828px){
+		max-width: 610px;
+	}
+	@include max-screen(624px){
+		max-width: 407px;
+	}
+}
+.grid-cell{
+	display: inline-block;
+	vertical-align: top;
+	border-bottom: 1px solid $black;
+	border-right: 1px solid $black;
+	max-width: 203px;
+	@include max-screen(421px){
+		width: 50%;
+	}
+}
+.grid-container{
+	border-left: 1px solid $black;
+	display: block;
+}
+.tab-1{
+	padding-bottom: 75px;
+	.logo-primary{
+	  @include max-screen($tablet){
+	    left: 50%;
+	    transform: translateX(-50%);
+		-webkit-transform: translateX(-50%);
+
+	  }
+	}
+	.inner-container-heading{
+	  @include max-screen($tablet){
+		position: relative;
+		margin: 0 auto;
+	  }
+	  @include max-screen($phone){
+	  	max-width: 100%;
+	  }
+	}
+}

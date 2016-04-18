@@ -1,0 +1,78 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  background: url("../images/bg_pattern.jpg") repeat;
+  font-family: $museo;
+  color: $black;
+  overflow-y: scroll;
+}
+.wrapper{
+  max-width: 774px;
+  padding: 0 20px;
+  margin:0 auto;
+}
+header{
+  .wrapper{
+    position: relative;
+    padding: 0;
+  }
+}
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+.logo-primary{
+  position: absolute;
+  left: 42px;
+  top:0;
+}
+img{
+  max-width: 100%;
+  display: block;
+}
+.row-green{
+  background: $color-brand;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 16px;
+  padding: 12px 0;
+  margin-bottom: 44px;
+  @include max-screen($phone){
+    font-size: 16px;
+    line-height: 20px;
+  }
+  a{
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    padding-left: 15px;
+    display: inline-block;
+    @include max-screen($tablet){
+      padding-left: 0;
+    }
+  }
+  &.copy-lrg{
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 0;
+  }
+}
+.banner-heading{
+  background: $color-brand;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 2px 0 0 0;
+  margin: 0 0 15px 0;
+  letter-spacing: 0.05em;
+}

@@ -1,0 +1,161 @@
+.tab-2 header{
+	.inner-container-heading{
+		max-width: 178px;
+		position: relative;
+		top: 83px;
+		p{
+			margin: 0;
+		}
+		.banner-heading{
+			font-size: 16px;
+			letter-spacing: 0.05em;
+		}
+		.copy-sm{
+			font-size: 13px;
+			line-height: 18px;
+			margin-bottom: 4px;
+		}
+		.copy-lrg{
+			font-size: 50px;
+			line-height: 48px;
+			text-transform: uppercase;
+			font-weight: 900;
+		}
+		.copy-med{
+			font-size: 30px;
+			line-height: 30px;
+			text-transform: uppercase;
+			font-weight: 700;
+			letter-spacing: 0.02em;
+		}
+		@include max-screen($phone){
+			max-width: none;
+			width: 100%;
+		}
+	}
+	.wrapper{
+		padding: 0 20px;
+		height: 261px;
+		position: absolute;
+		width: 100%;
+		left: 50%;
+		transform: translateX(-50%);
+		-webkit-transform: translateX(-50%);
+	}
+}
+.row-no-bg{
+	padding: 40px 0 36px;
+	p{
+		font-size: 18px;
+		font-weight: 700;
+		line-height: 24px;
+	}
+}
+.tab-2{
+	header img{
+		width: auto;
+		max-width: none;
+		display: inline-block;
+	}
+	header{
+		overflow: hidden;
+	}
+	.banner-container{
+		text-align: center;	
+		height: 261px;
+		overflow: hidden;
+	}
+
+}
+.toggle{
+	cursor: pointer;
+}
+.toggle-icon{
+	position: absolute;
+	display: flex;
+  	align-items: center;
+  	height: 100%;
+  	top:0;
+	span{
+		margin-left: 47px;
+	    width: 26px;
+	    height: 26px;
+	    font-size: 38px;
+	    text-align: center;
+	    border: 3px solid #000;
+	    border-radius: 50%;
+	    display: block;
+	    font-weight: 100;
+	    padding: 0px 0 0 0px;
+	    color: #000;
+	    line-height: 17px;
+	    vertical-align: top;
+	}
+}
+.recipe-container{
+	max-width: 810px;
+	margin: 0 auto;
+	.row-green{
+		margin-bottom: 0;
+		color: #f9f3e7;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 20px;
+		position:relative;
+		.wrapper{
+			padding-left: 31%;
+		}
+		p{
+			margin:0;
+		}
+	}
+	h3{
+		margin: 0;
+		font-size: 14px;
+		line-height: 18px;
+		color: $color-brand;
+		text-transform: uppercase;
+		font-weight: 900;
+		letter-spacing: 0.05em;
+	}
+	.img-container{
+		position: absolute;
+		z-index:1;
+	}
+	.col-2{
+		font-size: 0;
+		.inner-col{
+			width: 50%;
+			display: inline-block;
+			vertical-align: top;
+			&:last-child{
+				padding-left: 15px;
+			}
+		}
+	}
+	.inner-container{
+		position: relative;
+		z-index: 2;
+		margin-left: 31%;
+		padding-left: 38px;
+		background: url("../images/bg_pattern.jpg") repeat;
+		padding-top: 14px;
+		ul,
+		ol{
+			padding: 0;
+			font-size: 12px;
+			line-height: 18px;
+			font-weight: 700;
+			margin-top: 0;
+			padding-bottom: 6px;
+		}
+		p{
+			font-weight: 700;
+			font-style: italic;
+			font-size: 12px;
+			line-height: 18px;
+			margin-top: 0;
+			padding-bottom: 10px;
+		}
+	}
+}
