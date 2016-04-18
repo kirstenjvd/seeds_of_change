@@ -3,8 +3,8 @@ $(document).ready(function () {
 	'use strict';
 
 	$( '.toggle' ).click(function() {
-		$('this').toggleClass('open');
-	  	$( '.toggle-container' ).toggle();
+		$(this).toggleClass('toggle-open');
+	  	$(this).siblings('.toggle-container').toggle();
 	 });
-	
+
 });

@@ -400,6 +400,9 @@ body {
   max-width: 774px;
   padding: 0 20px;
   margin: 0 auto; }
+  @media screen and (max-width: 450px) {
+    .wrapper {
+      padding: 0 10px; } }
 
 header .wrapper {
   position: relative;
@@ -517,10 +520,11 @@ img {
   display: block; }
 .philosophy .copy-lrg {
   font-size: 18px;
+  letter-spacing: 0.02em;
   text-transform: uppercase; }
 .philosophy .copy-med {
   font-size: 16px;
-  letter-spacing: 0.05em; }
+  letter-spacing: 0.035em; }
 .philosophy .copy-sm {
   font-size: 16px;
   line-height: 16px; }
@@ -571,6 +575,11 @@ img {
     .tab-1 .inner-container-heading {
       max-width: 100%; } }
 
+@media screen and (max-width: 450px) {
+  .tab-2 header .logo-primary {
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%); } }
 .tab-2 header .inner-container-heading {
   max-width: 178px;
   position: relative;
@@ -607,9 +616,12 @@ img {
   left: 50%;
   transform: translateX(-50%);
   -webkit-transform: translateX(-50%); }
+  @media screen and (max-width: 450px) {
+    .tab-2 header .wrapper {
+      padding: 0 10px; } }
 
 .row-no-bg {
-  padding: 40px 0 36px; }
+  padding: 23px 0 22px; }
   .row-no-bg p {
     font-size: 18px;
     font-weight: 700;
@@ -627,19 +639,55 @@ img {
   overflow: hidden; }
 
 .toggle {
-  cursor: pointer; }
+  cursor: pointer;
+  background-image: url("../images/recipe_tab_closed.jpg");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain; }
+  .toggle .open {
+    display: block;
+    padding-left: 1px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 17px; }
+  .toggle .close {
+    display: none; }
+  .toggle.spanish-rice {
+    background-image: url("../images/recipe_tab_closed2.jpg"); }
+  @media screen and (max-width: 450px) {
+    .toggle {
+      background-image: none; } }
+
+.spanish-rice .toggle {
+  background-image: url("../images/recipe_tab_closed2.jpg"); }
+  @media screen and (max-width: 450px) {
+    .spanish-rice .toggle {
+      background-image: none; } }
+.spanish-rice .toggle-open {
+  background-image: none; }
+
+.toggle-open {
+  background-image: none; }
+  .toggle-open .open {
+    display: none; }
+  .toggle-open .close {
+    display: block; }
+
+.toggle-container {
+  display: none;
+  min-height: 669px; }
 
 .toggle-icon {
   position: absolute;
   display: flex;
   align-items: center;
   height: 100%;
-  top: 0; }
+  top: 0;
+  left: 40px; }
   .toggle-icon span {
-    margin-left: 47px;
     width: 26px;
     height: 26px;
-    font-size: 38px;
+    font-size: 43px;
     text-align: center;
     border: 3px solid #000;
     border-radius: 50%;
@@ -647,23 +695,39 @@ img {
     font-weight: 100;
     padding: 0px 0 0 0px;
     color: #000;
-    line-height: 17px;
+    line-height: 16px;
     vertical-align: top; }
+  @media screen and (max-width: 800px) {
+    .toggle-icon {
+      left: 20px; } }
+  @media screen and (max-width: 450px) {
+    .toggle-icon {
+      left: 10px; } }
 
 .recipe-container {
   max-width: 810px;
-  margin: 0 auto; }
+  margin: 0 auto 16px; }
   .recipe-container .row-green {
     margin-bottom: 0;
     color: #f9f3e7;
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
-    position: relative; }
+    position: relative;
+    padding: 6px 0; }
+    @media screen and (max-width: 450px) {
+      .recipe-container .row-green {
+        font-size: 15px; } }
     .recipe-container .row-green .wrapper {
       padding-left: 31%; }
+      @media screen and (max-width: 767px) {
+        .recipe-container .row-green .wrapper {
+          padding-left: 15%;
+          padding-right: 5px; } }
     .recipe-container .row-green p {
-      margin: 0; }
+      margin: 0;
+      background: #4f6825;
+      padding: 6px; }
   .recipe-container h3 {
     margin: 0;
     font-size: 14px;
@@ -682,11 +746,17 @@ img {
       display: inline-block;
       vertical-align: top; }
       .recipe-container .col-2 .inner-col:last-child {
-        padding-left: 15px; }
+        padding-left: 35px; }
+        @media screen and (max-width: 767px) {
+          .recipe-container .col-2 .inner-col:last-child {
+            padding-left: 0; } }
+      @media screen and (max-width: 767px) {
+        .recipe-container .col-2 .inner-col {
+          width: 100%; } }
   .recipe-container .inner-container {
     position: relative;
     z-index: 2;
-    margin-left: 31%;
+    margin-left: 29%;
     padding-left: 38px;
     background: url("../images/bg_pattern.jpg") repeat;
     padding-top: 14px; }
@@ -705,5 +775,9 @@ img {
       line-height: 18px;
       margin-top: 0;
       padding-bottom: 10px; }
+    @media screen and (max-width: 450px) {
+      .recipe-container .inner-container {
+        margin-left: 10%;
+        padding-left: 22px; } }
 
 /*# sourceMappingURL=main.css.map */
